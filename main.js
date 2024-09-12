@@ -58,11 +58,60 @@ if(userAnswer) {
           ti.output("Your team is the Carolina Panthers");
           ti.output("Happy Driving!!");
         } else {
-          ti.output("your team is the Detroit Lions!!!!!!")
+          ti.output("Your team is the Detroit Lions!!!!!!");
         }
       } else {
-        ti.output("Has your team lost to the New England Patriots twice in the superbowl")
-        
+        ti.output("Has your team lost to the New England Patriots twice in the superbowl");
+        userAnswer = await ti.readYesOrNo();
+        if (userAnswer) {
+          ti.output("Your team is the Los Angeles Rams");
+        } else {
+          ti.output("Your team is the Seattle Seahawks")
+        }
+      }
+    } else {
+      ti.output("Has Mike Vick played for your team?");
+      userAnswer = await ti.readYesOrNo();
+      if(userAnswer) {
+        ti.output("Is Jalen Hurts your teams starting quarterback this year?");
+        userAnswer = await ti.readYesOrNo();
+        if(userAnswer) {
+          ti.output("Your team is the Philadelphia Eagles");
+        } else {
+          ti.output("Your team is the Atlanta Falcons")
+        }
+      } else {
+        ti.output("Did your team pick #1 overall in 2024?");
+        userAnswer = await ti.readYesOrNo();
+        if(userAnswer) {
+          ti.output("Your team is the Chicago Bears!!");
+        } else {
+          ti.output("Your team is the Arizona Cardinals");
+        }
+      }
+    }
+  } else {
+    ti.output("Was your team founded before 1950??????");
+    userAnswer = await ti.readYesOrNo();
+    if(userAnswer) {
+      ti.output("Does your team have a qb with 700 rushing yards in a season????????????????");
+      userAnswer = await ti.readYesOrNo();
+      if(userAnswer) {
+        ti.output("Did your team lose the NFC east in 2023");
+        userAnswer = await ti.readYesOrNo();
+        if(userAnswer) {
+          ti.output("Your team is the Washington Commanders");
+        } else {
+          ti.output("Your team is the NY Giants")
+        }
+      } else {
+        ti.output("Was your teams starting quarterback the last pick in the draft?")
+        userAnswer = await ti.readYesOrNo();
+        if(userAnswer) {
+          "Your team is the San Francisco 49ers"
+        } else {
+          ti.output("Your team is the Green Bay Packers!")
+        }
       }
     }
   }
