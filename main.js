@@ -40,6 +40,25 @@ if(userAnswer) {
           ti.output("Your team is the Denver Broncos");
         }
       }
+    } else {
+      ti.output("Has your team won a super bowl since man landed on the moon?");
+      userAnswer = await ti.readYesOrNo();
+      if(userAnswer) {
+        ti.output("Your team is the New York Jets");
+        ti.output("Your team also sucks the Patriots own your team");
+      } else {
+        ti.output("Is your team in the AFC North???");
+        userAnswer = await ti.readYesOrNo();
+        if(userAnswer) {
+          ti.output("Did the greatest linebacker ever play for your team??");
+          userAnswer = await  ti.readYesOrNo();
+          if (userAnswer) {
+            ti.output("Your team is the Baltimore Ravens");
+          } else {
+            ti.output("Your team is the Pittsburgh Steelers")
+          }
+        }
+      }
     }
   }
 } else {
@@ -56,7 +75,6 @@ if(userAnswer) {
         userAnswer = await ti.readYesOrNo();
         if (userAnswer) {
           ti.output("Your team is the Carolina Panthers");
-          ti.output("Happy Driving!!");
         } else {
           ti.output("Your team is the Detroit Lions!!!!!!");
         }
@@ -102,20 +120,38 @@ if(userAnswer) {
         if(userAnswer) {
           ti.output("Your team is the Washington Commanders");
         } else {
-          ti.output("Your team is the NY Giants")
+          ti.output("Your team is the NY Giants");
         }
       } else {
         ti.output("Was your teams starting quarterback the last pick in the draft?")
         userAnswer = await ti.readYesOrNo();
         if(userAnswer) {
-          "Your team is the San Francisco 49ers"
+          ti.output("Your team is the San Francisco 49ers");
         } else {
-          ti.output("Your team is the Green Bay Packers!")
+          ti.output("Your team is the Green Bay Packers!");
+        }
+      }
+    } else {
+      ti.output("Has your team won a super bowl since 2000?");
+      userAnswer = await ti.readYesOrNo();
+      if(userAnswer) {
+        ti.output("Did the GOAT play for your team?");
+        userAnswer = await ti.readYesOrNo();
+        if(userAnswer) {
+          ti.output("Your team is the Tampa Bay Buccaneers");
+        } else {
+          ti.output("Your team is the New Orleans Saints");
+        }
+      } else {
+        ti.output("Has your team won a super bowl before 2000?");
+        userAnswer = await ti.readYesOrNo();
+        if (userAnswer) {
+          ti.output("Your team is the Dallas Cowboys");
+        } else {
+          ti.output("Your team is the Minnesota Vikings");
         }
       }
     }
   }
-
-  
 }
 
